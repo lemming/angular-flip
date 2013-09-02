@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>angular-flip example</title>
+  <link rel="stylesheet" href="src/flip.css" />
+  <style type="text/css">
+      body {
+          background-color: #efefef;
+      }
+
+      .flip {
+          width: 400px;
+          height: 256px;
+          margin: 50px auto;
+          font-size: 3em;
+          text-align: center;
+      }
+
+      .face.front {
+          background-color: white;
+      }
+
+      .face.back {
+          background-color: black;
+          color: white;
+      }
+
+  </style>
+</head>
+<body>
+
+<div ng-app="demo">
+  <label><input type="checkbox" ng-model="flipped" /> flipped</label>
+
+  <flip flipped="flipped">
+    <flip-front>
+        <button flip-toggle>flip vertically</button>
+    </flip-front>
+    <flip-back flip-toggle>
+      <img src="tux.png">
+      <h4>Here it is!</h4>
+    </flip-back>
+  </flip>
+
+  <flip horizontal flip-toggle>
+    <flip-front>Click to flip horizontally</flip-front>
+    <flip-back>
+      <img src="tux.png">
+      <h4>Here it is!</h4>
+    </flip-back>
+  </flip>
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="src/angular-flip.js"></script>
+<script>
+angular.module('demo', ['angular-flip']);
+</script>
+</body>
+</html>
