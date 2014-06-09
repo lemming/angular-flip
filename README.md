@@ -19,7 +19,13 @@ var app = angular.module('MyApp', ['angular-flip']);
 
 Have fun:
 ```html
+<!-- Vertical flip -->
 <flip flip-toggle>
+    <flip-front>Visible content goes there</flip-front>
+    <flip-back>The other side</flip-back>
+</flip>
+<!-- Horizontal flip -->
+<flip flip-toggle horizontal>
     <flip-front>Visible content goes there</flip-front>
     <flip-back>The other side</flip-back>
 </flip>
