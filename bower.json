@@ -9,8 +9,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "git://github.com/angular/bower-angular.git#1.2.0rc1",
-    "angular-mocks": "1.2.0rc1",
     "jquery": "~2.0.3"
+    "angular": "~1.2.26",
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.26"
   }
 }
