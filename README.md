@@ -3,6 +3,8 @@
 [AngularJS](http://angularjs.org/) directive that allows to achieve 3D card flip
 effect.
 
+[Demo](http://plnkr.co/edit/wBXlVC9DNj9uDJmqgnKK?p=preview)
+
 ##Quick start
 ***
 
